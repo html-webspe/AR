@@ -219,7 +219,7 @@ textarea {
   display: block;
   padding: 22px 40px;
   border: 1px solid #eee;
-  background: #333333;
+  background: #D6D6D6;
   border-radius: 47px;
   color: #000;
   font-weight: 600;
@@ -230,7 +230,7 @@ textarea {
 .input::-webkit-input-placeholder {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   opacity: 0.43;
@@ -239,7 +239,7 @@ textarea {
 .input::-moz-placeholder {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   opacity: 0.43;
@@ -248,7 +248,7 @@ textarea {
 .input:-ms-input-placeholder {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   opacity: 0.43;
@@ -257,7 +257,7 @@ textarea {
 .input::-ms-input-placeholder {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   opacity: 0.43;
@@ -266,7 +266,7 @@ textarea {
 .input::placeholder {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   opacity: 0.43;
@@ -387,6 +387,15 @@ textarea.input {
   z-index: -1;
 }
 
+.header._header-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #375EFF;
+  z-index: 100;
+}
+
 .header__container {
   max-width: 72.875rem;
 }
@@ -413,6 +422,10 @@ textarea.input {
 }
 
 .menu__link:hover {
+  color: #FD605E;
+}
+
+.menu__link._navigator-active {
   color: #FD605E;
 }
 
@@ -861,6 +874,10 @@ textarea.input {
 }
 
 @media (min-width: 29.99875em) {
+  .intro__text br {
+    display: none;
+  }
+
   .intro__text svg {
     margin-right: 9px;
     -webkit-animation: arrow 1.5s linear infinite;
@@ -1339,6 +1356,26 @@ textarea.input {
     font-size: 0.875rem;
   }
 
+  .input::-webkit-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .input::-moz-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .input:-ms-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .input::-ms-input-placeholder {
+    font-size: 0.875rem;
+  }
+
+  .input::placeholder {
+    font-size: 0.875rem;
+  }
+
   .btn {
     padding: 15px 35px;
   }
@@ -1621,14 +1658,15 @@ textarea.input {
 }
 
 @media (max-width: 29.99875em) {
+  .menu__body {
+    width: 100%;
+  }
+
   .intro__text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 1rem;
   }
 
