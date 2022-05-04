@@ -582,17 +582,6 @@ textarea.input {
   z-index: 0;
 }
 
-.speaker__img,
-.speaker picture {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 375px;
-          flex: 0 0 375px;
-  width: 375px;
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .speaker__name {
   font-weight: 600;
   margin-bottom: 2.8125rem;
@@ -1215,6 +1204,17 @@ textarea.input {
     padding: 65px 65px 0 65px;
   }
 
+  .speaker__img,
+  .speaker picture {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 375px;
+            flex: 0 0 375px;
+    width: 375px;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .speaker__body-inner {
     position: relative;
   }
@@ -1314,8 +1314,7 @@ textarea.input {
     margin-right: 40px;
   }
 
-  .speaker__img,
-  .speaker picture {
+  .speaker__img {
     display: block;
     margin-left: auto;
     width: 258px;
@@ -1572,8 +1571,7 @@ textarea.input {
     padding: 20px 15px 0 15px;
   }
 
-  .speaker__img,
-  .speaker picture {
+  .speaker__img {
     width: 200px;
     position: relative;
     top: -70px;
