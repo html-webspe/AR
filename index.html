@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220504130547">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220504154901">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,11 +24,13 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" data-goto=".tester" class="menu__link">Про курс</a></li>
-								<li class="menu__item"><a href="" data-goto=".goal" class="menu__link">Для кого</a></li>
-								<li class="menu__item"><a href="" data-goto=".program" class="menu__link">Програма</a>
+								<li class="menu__item"><a href="" data-goto=".tester" data-goto-top="180" class="menu__link">Про
+										курс</a></li>
+								<li class="menu__item"><a href="" data-goto=".goal" data-goto-top="180" class="menu__link">Для
+										кого</a></li>
+								<li class="menu__item"><a href="" data-goto=".program" data-goto-top="180" class="menu__link">Програма</a>
 								</li>
-								<li class="menu__item"><a href="" data-goto=".speaker" class="menu__link">Спікер</a></li>
+								<li class="menu__item"><a href="" data-goto=".speaker" data-goto-top="180" class="menu__link">Спікер</a></li>
 								<!--<li class="menu__item"><a href="" class="menu__link">Q&A</a></li>-->
 							</ul>
 						</nav>
@@ -197,19 +199,18 @@
 						<h2 class="section-title skills__title">Навички, які отримаєш після <br>
 							проходження курсу:
 						</h2>
-
 						<ul class="skills__list">
-							<li class="skills__list-item">Спробуєте на практиці виконати обов’язки тестувальника</li>
-							<li class="skills__list-item">Дізнаєтесь чи підходить вам професія тестувальника</li>
-							<li class="skills__list-item">Ознайомитесь з принципом розробки програмного забезпечення за
+							<li class="skills__list-item">Спробуєш на практиці виконати обов’язки тестувальника</li>
+							<li class="skills__list-item">Дізнаєшся, чи підходить вам професія тестувальника</li>
+							<li class="skills__list-item">Ознайомишся з принципом розробки програмного забезпечення за
 								методологією Scrum</li>
-							<li class="skills__list-item">Дізнаєтесь, що таке тест план, та як з ним працювати на
-								проекті</li>
-							<li class="skills__list-item">Навчитесь формулювати вимоги у форматі user story</li>
-							<li class="skills__list-item">Створите чекліст, test suit, тест кейси</li>
-							<li class="skills__list-item">Протестуєте верстку сайту на різних браузерах та девайсах</li>
-							<li class="skills__list-item">Попрацюєте з помилки в дизайні та у верстці сайту</li>
-							<li class="skills__list-item">Створите баг репорти</li>
+							<li class="skills__list-item">Дізнаєшся, що таке тест план, та як з ним працювати на проекті
+							</li>
+							<li class="skills__list-item">Навчишся формулювати вимоги у форматі user story</li>
+							<li class="skills__list-item">Створиш чекліст, test suit, тест кейси</li>
+							<li class="skills__list-item">Протестуєш верстку сайту на різних браузерах та девайсах</li>
+							<li class="skills__list-item">Попрацюєш з помилки в дизайні та у верстці сайту</li>
+							<li class="skills__list-item">Створиш баг репорти</li>
 						</ul>
 					</div>
 				</div>
@@ -230,9 +231,9 @@
 							<h2 class="section-title cost__title">Заповніть форму
 								та почніть навчання прямо зараз</h2>
 
-							<form class="cost__form form">
+							<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="cost__form form">
 								<lable class="form__row">
-									<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Номер телефону" class="form__input input">
+									<input autocomplete="off" data-required type="tel" name="form[]" data-error="Введіть телефон" placeholder="Номер телефону" class="form__input input">
 								</lable>
 								<lable class="form__row">
 									<button type="submit" class="form__button button fw">Почати безкоштовне
@@ -299,16 +300,18 @@
 						<nav class="footer__navigation">
 							<ul class="footer__navigation-list">
 								<li class="footer__navigation-item">
-									<a href="" data-goto=".tester" class="footer__navigation-link">Про курс</a>
+									<a href="" data-goto=".tester" data-goto-top="180" class="footer__navigation-link">Про
+										курс</a>
 								</li>
 								<li class="footer__navigation-item">
-									<a href="" data-goto=".goal" class="footer__navigation-link">Для кого</a>
+									<a href="" data-goto=".goal" data-goto-top="180" class="footer__navigation-link">Для
+										кого</a>
 								</li>
 								<li class="footer__navigation-item">
-									<a href="" data-goto=".program" class="footer__navigation-link">Програма</a>
+									<a href="" data-goto=".program" data-goto-top="180" class="footer__navigation-link">Програма</a>
 								</li>
 								<li class="footer__navigation-item">
-									<a href="" data-goto=".speaker" class="footer__navigation-link">Спікер</a>
+									<a href="" data-goto=".speaker" data-goto-top="180" class="footer__navigation-link">Спікер</a>
 								</li>
 								<li class="footer__navigation-item">
 									<a href="" class="footer__navigation-link">Q&A</a>
@@ -339,17 +342,7 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220504130547"></script>
+	<script src="js/app.min.js?_v=20220504154901"></script>
 </body>
 
 </html>
