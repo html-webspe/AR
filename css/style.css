@@ -554,6 +554,10 @@ textarea.input {
   left: 0;
   border-radius: 50%;
   background-color: #000;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 120px;
+  height: 120px;
 }
 
 .intro__title {
@@ -1065,11 +1069,8 @@ textarea.input {
 
   .intro__column-start {
     left: 83px;
-    width: 120px;
-    height: 120px;
-    font-size: 0.9375rem;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
+    /*width: 120px;
+    height: 120px;*/
   }
 
   .speaker__description {
@@ -1466,11 +1467,15 @@ textarea.input {
   }
 
   .intro__column-start {
+    width: 100px;
+    height: 100px;
+    font-size: 10px;
+  }
+
+  .intro__column-start {
     left: 50px;
-    width: 80px;
-    height: 80px;
-    font-size: 12px;
-    line-height: 1.25;
+    /* width: 80px; 
+     height: 80px;*/
   }
 
   .intro__block-shadow {

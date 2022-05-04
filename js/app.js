@@ -3167,7 +3167,7 @@
         __webpack_require__(125);
         const inputMasks = document.querySelectorAll('input[type="tel"]');
         if (inputMasks.length) inputMasks.forEach((element => {
-            let im = new Inputmask("+9 (999) 999-99-99");
+            let im = new Inputmask("+99 (999) 999-99-99");
             im.mask(element);
         }));
         class ScrollWatcher {
