@@ -22,7 +22,7 @@
 	*/
 
 	//От кого письмо
-	$mail->setFrom('from@gmail.com', 'Фрилансер по жизни'); // Указать нужный E-mail
+	$mail->setFrom('malchevaolya@gmail.com', 'Фрилансер по жизни'); // Указать нужный E-mail
 	//Кому отправить
 	$mail->addAddress('andreypbiz@gmail.com'); // Указать нужный E-mail
 	//Тема письма
