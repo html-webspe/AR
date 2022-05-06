@@ -1,0 +1,57 @@
+// Заголовки, общие БЄМ блоки и проче...
+.section{
+    margin-bottom: rem(40);
+}
+.section-title {
+    font-family: 'Jura';
+    font-weight: 500;
+
+    @media (max-width:$mobile){
+        font-size: rem(32);
+        line-height: math.div(44,32);  
+        margin-bottom: rem(20); 
+    }
+    @media (min-width:$mobile){
+        font-size: rem(44);
+        line-height: math.div(52 ,44 );  
+        margin-bottom: rem(30);
+    }
+}
+.social {
+    display: flex;
+    margin-top: rem(20);
+
+    @media (max-width:$mobile){
+         margin-bottom: rem(20); 
+    }
+
+    &__item {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+       &:hover{
+            svg{
+                transition: transform 0.3s ease 0s;
+                transform: scale(1.1);
+            }
+       }
+    }
+}
+.block-shadow{
+    position: relative;
+    width: 408px;
+    height: 395px;
+    border-radius: 50%;
+    background: #FD605E;
+    filter: blur(120px);
+    z-index: -1;
+}

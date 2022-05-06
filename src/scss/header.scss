@@ -1,0 +1,172 @@
+//====================================================================================================
+.header {
+
+	&._header-scroll{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: $colorAcent;
+		z-index: 100;
+	}
+
+	&__container{
+		max-width: rem(1166);
+	}
+	
+	&__body{
+		display: flex;
+		align-items:center;
+		padding: 16px 0;
+		border-bottom: 1px solid #C0C0C2;
+
+		@media (max-width:$mobile){
+			 justify-content: space-between; 
+		}
+	}
+	&__logo {
+		@media (max-width:$pc){
+			 margin-right: 40px; 
+		}
+		@media (min-width:$pc){
+			 margin-right: 114px; 
+		}
+	}
+	&__phone {
+		@media (min-width:$mobile){
+			margin-left: auto; 
+			margin-right: 7px;
+		}
+	}
+}
+.menu {
+
+	&-open{
+		.menu__body{
+			right: 0;
+		}
+	}
+	&__body {
+
+		@media (max-width:$tablet){
+			 position: fixed;
+			 top: 77px;
+			 right: -200%;
+			 width: 360px;
+			 height: 100%;
+			 background-color: $colorDark;
+			 transition: right 0.4s ease 0s;
+			 z-index: 9;
+		}
+
+		@media (max-width:$mobileSmall){
+			 width: 100%; 
+		}
+	}
+
+	&__list {
+		@media (max-width:$tablet){
+			 padding: 40px; 
+		}
+		@media (min-width:$tablet){
+			display: flex; 
+		}
+	}
+
+	&__item {
+		@media (max-width:$tablet){
+			 text-align: center; 
+			 &:not(:last-child) {
+				 margin-bottom: rem(30);
+			 }
+		}
+		@media (min-width:$tablet){
+			&:not(:last-child) {
+				margin-right: 25px;
+			}   
+		}
+		@media (min-width:$pc){
+			&:not(:last-child) {
+				margin-right: 45px;
+			} 
+		}
+	}
+
+	&__link {
+		@media (max-width:$tablet){
+			font-size: 22px;
+		}
+		transition: color 0.3s ease 0s;
+		&:hover{
+			color: #FD605E;
+		}
+
+		&._navigator-active{
+			color: #FD605E;
+		}
+	}
+}
+.phone {
+	font-size: rem(16);
+	line-height: math.div(20 ,16 );
+	font-weight: 600;
+
+	transition: color 0.3s ease 0s;
+	&:hover{
+		color: #FD605E;
+	}
+}
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 20;
+		margin-left: 20px;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #fff;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+

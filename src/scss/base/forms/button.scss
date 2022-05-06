@@ -1,0 +1,33 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items:center;
+	padding: 22px 20px;
+	font-weight: 600;
+	font-size: rem(16);
+	line-height: math.div(20 ,16 );
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #000000;
+	border-radius: 47px;
+	background-color: $colorAcent;
+	transition: transform 0.3s ease 0s;
+
+
+	@media (max-width:$tablet){
+		padding: 16px;  
+		font-size: rem(14);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			transform: scale(1.03);
+		}
+	}
+	&.fw {
+		width: 100%;
+	}
+}

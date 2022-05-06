@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Tester"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="main">
+			<section class="section intro">
+				<div class="intro__container">
+					<div class="intro__column intro__column-content">
+						<h1 class="intro__title title">Безкоштовний <br>
+							міні-курс по&nbsp;основам тестування&nbsp;ПЗ з&nbsp;нуля</h1>
+
+						<p class="intro__text">
+							<svg width="38" height="19" viewBox="0 0 38 19" fill="none">
+								<path d="M29.6 1L37 9.84L29.6 18M0 9.5967H37" stroke="white" stroke-width="1.5" />
+							</svg>
+							<span>Познайомся з професією Q&A <br> інженера <b>за 3 години</b></span>
+						</p>
+						<a href="" data-goto=".cost" data-goto-top="330" class="btn intro__btn">Хочу на курс</a>
+					</div>
+					<div class="intro__column intro__column-right">
+						<div class="intro__column-inner">
+							<div class="intro__column-start">
+								<span>Старт одразу</span>
+								<span>після реєстрації</span>
+							</div>
+							<div class="intro__column-img intro__column-img-big">
+								<img src="@img/home/01.png" alt="">
+							</div>
+							<div class="intro__column-img intro__column-img-sm">
+								<img src="@img/home/02.png" alt="">
+							</div>
+							<div class="intro__block-shadow block-shadow"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Speaker  -->
+			<section class="section speaker">
+				<div class="speaker__container">
+					<h2 class="section-title speaker__title">Спікер курсу</h2>
+
+					<div class="speaker__body">
+						<div class="speaker__body-inner">
+							<h2 class="speaker__name">Олена Клюшник,
+								<br> Senior Test Engineer
+							</h2>
+
+							<div class="speaker__info">
+								<div class="speaker__info-item">
+									<div class="speaker__info-icon">
+										<img src="@img/speaker/01.svg" alt="">
+									</div>
+									<p class="speaker__info-desc">
+										5+ років в ІТ (manual testing, web, desktop)
+									</p>
+								</div>
+								<div class="speaker__info-item">
+									<div class="speaker__info-icon">
+										<img src="@img/speaker/02.svg" alt="">
+									</div>
+									<p class="speaker__info-desc">
+										1 рік досвіду в управлінні Support Team
+									</p>
+								</div>
+								<div class="speaker__info-item">
+									<div class="speaker__info-icon">
+										<img src="@img/speaker/03.svg" alt="">
+									</div>
+									<p class="speaker__info-desc">
+										Пройшла шлях від вчительки української мови до Senior Test Engineer
+									</p>
+								</div>
+							</div>
+
+							<div class="speaker__description">
+								<b>Олена</b> — сертифікований тестувальник, вона постійно підвищує кваліфікацію на
+								різноманітних курсах, має міжнародні сертифікати ISTQB (International Software Testing
+								Qualifications Board)
+							</div>
+
+						</div>
+						<img class="speaker__img" src="@img/speaker/speaker-img.png" alt="">
+						<div class="speaker__block-shadow block-shadow"></div>
+					</div>
+
+				</div>
+			</section>
+			<!--  Goal  -->
+			<section class="section goal">
+				<div class="goal__container">
+					<h2 class="section-title goal__title">Цей курс для тебе, <br> якщо ти:</h2>
+
+					<div class="goal__body">
+						<div class="goal__item">
+							Хочеш стартувати в IT без вивчення мов програмування
+						</div>
+						<div class="goal__item">
+							IT-спеціаліст, який хоче перекваліфікуватись у тестувальника ПЗ
+						</div>
+						<div class="goal__item">
+							Гуманітарій, який вирішив стати технічним спеціалістом
+						</div>
+						<div class="goal__item">
+							Хочеш швидко та легко почати кар’єру в IT
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!--  Tester  -->
+			<section class="section tester">
+				<div class="tester__container">
+					<div class="tester__body">
+						<div class="tester__info">
+							<h2 class="section-title tester__title">Хто такий <br> тестувальник ПЗ?</h2>
+
+							<p class="tester__desc">
+								Інженер з тестування шукає помилки та вразливі місця на нових сайтах та у програмах
+								для забезпечення безперебійної роботи з ними у користувачів.
+							</p>
+						</div>
+						<div class="tester__wages">
+							<div class="tester__wages-content">
+								<p class="tester__wages-text">Розподіл зарплат:</p>
+								<p class="tester__wages-info">Середня зарплата тестувальнка в Україні
+									<span>21 500 грн</span>
+								</p>
+							</div>
+							<img src="@img/tester/wages.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--  Program  -->
+			<section class="section program">
+				<div class="program__container">
+					<h2 class="section-title program__title">Програма курсу</h2>
+
+					<div class="program__body">
+						<ul class="program__list">
+							<li class="program__list-item">Лекція 1. Знайомство з проектом</li>
+							<li class="program__list-item">Лекція 2. Робота з дизайном продукту
+							<li>
+							<li class="program__list-item">Лекція 3. Робота з тестовою документацією
+							</li>
+							<li class="program__list-item">Лекція 4. Тестуємо верстку сайту. Частина 1
+							</li>
+							<li class="program__list-item">Лекція 5. Тестуємо верстку сайту. Частина 2
+							</li>
+						</ul>
+						<div class="program__block-shadow block-shadow"></div>
+					</div>
+				</div>
+			</section>
+			<!--  Skills  -->
+			<section class="section skills">
+				<div class="skills__container">
+					<div class="skills__body">
+						<h2 class="section-title skills__title">Навички, які отримаєш після <br>
+							проходження курсу:
+						</h2>
+						<ul class="skills__list">
+							<li class="skills__list-item">Спробуєш на практиці виконати обов’язки тестувальника</li>
+							<li class="skills__list-item">Дізнаєшся, чи підходить вам професія тестувальника</li>
+							<li class="skills__list-item">Ознайомишся з принципом розробки програмного забезпечення за
+								методологією Scrum</li>
+							<li class="skills__list-item">Дізнаєшся, що таке тест план, та як з ним працювати на проекті
+							</li>
+							<li class="skills__list-item">Навчишся формулювати вимоги у форматі user story</li>
+							<li class="skills__list-item">Створиш чекліст, test suit, тест кейси</li>
+							<li class="skills__list-item">Протестуєш верстку сайту на різних браузерах та девайсах</li>
+							<li class="skills__list-item">Попрацюєш з помилки в дизайні та у верстці сайту</li>
+							<li class="skills__list-item">Створиш баг репорти</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--  Cost  -->
+			<section class="section cost">
+				<div class="cost__container">
+					<div class="cost__body">
+						<div class="cost__column">
+							<div class="cost__info">
+								<p class="cost__info-text">Вартість <br> міні-курсу</p>
+								<p class="cost__info-price-old">50$</p>
+								<p class="cost__info-price-new">БЕЗКОШТОВНО</p>
+							</div>
+							<div class="cost__block-shadow block-shadow"></div>
+						</div>
+						<div class="cost__column">
+							<h2 class="section-title cost__title">Заповніть форму
+								та почніть навчання прямо зараз</h2>
+
+							<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="cost__form form">
+								<lable class="form__row">
+									<input autocomplete="tel" data-required="tel" type="tel" name="phone"
+										data-error="Введіть телефон" placeholder="Номер телефону"
+										class="form__input input">
+								</lable>
+								<lable class="form__row">
+									<button type="submit" class="form__button button fw">Почати безкоштовне
+										навчання</button>
+								</lable>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--  Reviews -->
+			<section class="section reviews">
+				<div class="reviews__container">
+					<h2 class="section-title reviews__title">Відгуки</h2>
+
+					<div class="reviews__body">
+						<div class="reviews__item reviews__item-big">
+							<img src="@img/reviews/01.jpg" alt="">
+						</div>
+						<div class="reviews__item">
+							<img src="@img/reviews/02.jpg" alt="">
+						</div>
+						<div class="reviews__item">
+							<img src="@img/reviews/03.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

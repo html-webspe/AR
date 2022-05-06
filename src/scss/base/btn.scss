@@ -1,0 +1,28 @@
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    font-size: rem(16);
+    line-height: math.div(20 ,16 );
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    border-radius: 35px;
+    color: #000;
+    padding: 22px 35px;
+    background-color: #fff;
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+
+    @media (max-width:$tablet){
+        padding: 15px 35px;
+    }
+    
+    @media (max-width:$mobileSmall){
+        filter: drop-shadow(0px 4px 29px rgba(255, 255, 255, 0.75)); 
+    }
+
+    &:hover{
+        background-color: #FD605E;
+        color: #fff;
+    }
+}
